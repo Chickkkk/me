@@ -3,5 +3,9 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
-  vue: {},
+  modules: ['@nuxt/ui'],
+  ui: {
+    fonts: false
+  },
+  css: ['~/assets/css/main.css']
 });

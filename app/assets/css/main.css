@@ -1,4 +1,7 @@
-* {
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* * {
   box-sizing: border-box;
 }
 body {
@@ -14,5 +17,5 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 

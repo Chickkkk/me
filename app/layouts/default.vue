@@ -1,6 +1,10 @@
 <template>
-  <div class="flex">
-    <p>一些在所有页面之间共享的默认布局内容</p>
+  <div>
+    <div>Layout</div>
     <slot />
   </div>
 </template>
+
+<script setup lang="ts">
+
+</script>

@@ -1,0 +1,13 @@
+{
+  // "tailwindCSS.experimental.configFile": ".nuxt/tailwind/postcss.mjs", // This is the path to your Tailwind CSS configuration file
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}
