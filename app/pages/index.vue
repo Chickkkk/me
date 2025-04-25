@@ -1,13 +1,13 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <h1>Home</h1>
-    <p>Home page</p>
+  <div class="px-4 flex flex-col items-center gap-2">
+    <div class="group">
+      <NuxtImg src="/avatar.png" class="size-16 rounded-full ring-2 group-hover:ring-4 ring-neutral-500/10  dark:ring-white/10" />
+      <h1 class="mt-2 font-bold ">Seikonn</h1>
+    </div>
+    <p class="mt-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolores molestias deserunt, incidunt corrupti quis velit voluptas debitis aspernatur perspiciatis maiores quia ab autem porro nisi repellat recusandae ducimus est.</p>
   </div>
 </template>
-<script setup lang="ts">
-
-
-
-</script>
 
 <style lang="scss" scoped></style>

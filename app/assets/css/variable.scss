@@ -1,2 +1,11 @@
 $primary: #eb2525;
-$secondary: #E4A79D;
+$secondary: #e4a79d;
+
+.cl {
+  &-primary {
+    color: $primary;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+}
