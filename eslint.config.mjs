@@ -14,6 +14,7 @@ export default withNuxt(
     {
       files: ['**/*.vue'],
       rules: {
+        'no-console': 'off',
         'vue/singleline-html-element-content-newline': 'off',
       },
     },

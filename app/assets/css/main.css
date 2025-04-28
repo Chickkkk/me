@@ -1,8 +1,15 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-
+@plugin "@tailwindcss/typography";
 
 @theme default {
+  /* --font-sans: ui-sans-serif, 'Microsoft YaHei UI', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'Microsoft YaHei UI', system-ui, sans-serif; */
+/*   
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  */
+
   --color-primary: var(--ui-primary);
   --color-secondary: var(--ui-secondary);
   --color-warning: var(--ui-warning);
@@ -55,4 +62,8 @@
 .page-enter-from {
   opacity: 0;
   transform: translateY(5px);
+}
+
+.limit {
+  @apply w-full px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto;
 }
