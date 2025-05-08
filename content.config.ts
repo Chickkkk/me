@@ -8,7 +8,7 @@ export default defineContentConfig({
     // }),
     blog: defineCollection({
       type: 'page',
-      source: '001.blog/**/*.md',
+      source: 'blog/**/*.md',
       schema: z.object({
         tags: z.array(z.string()),
         image: z.string(),
