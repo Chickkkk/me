@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'seikonn_me',
+      name: 'qkun-fun-me',
       port: '3000',
       exec_mode: 'cluster',
       instances: 'max',
