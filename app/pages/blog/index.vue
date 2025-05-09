@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import {} from 'vue'
-
-const { data: blogs } = await useAsyncData('blog', () => queryCollection('blog').all())
+const { data: blogs } = await useAsyncData('blog', () => {
+  return queryCollection('blog').select('title', 'description', 'date', 'path').all()
+})
 
 function getReadableDate(dateString: Date) {
   const date = new Date(dateString)
@@ -19,9 +19,9 @@ function getReadableDate(dateString: Date) {
       <h1 class="text-2xl font-bold select-none">Blog</h1>
       <p class="mt-6 text-sm text-muted">每月两篇, 真的吗?</p>
     </div>
-    <div>
-      <!-- <pre>{{ blogs }}</pre> -->
-    </div>
+    <!-- <div>
+      <pre>{{ blogs }}</pre>
+    </div> -->
     <ul class="space-y-16">
       <li v-for="blog in blogs" :key="blog.title">
         <NuxtLink :to="blog.path">
